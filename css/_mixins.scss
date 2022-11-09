@@ -1,0 +1,12 @@
+@mixin box-fade-in-out($color, $height, $width) {
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: $width;
+    height: $height;
+    background: $color;
+    transition: 0.3s;
+  }
+}
